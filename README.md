@@ -56,14 +56,13 @@ repositories {
 + 3、退出shell,清除Launcher3的数据 adb shell pm clear com.android.launcher3  
 + 4、重启设备 adb reboot  
 + 5、运行  
-```diff
-
+```
 运行的时候会提示你找不到Default Activity，点击Edit Configuration -> Launch Options ，在Launch选项这里 将Default Activity改为 Specified Activity，然后将Activity选为 com.android.launcher3.Launcher 便可以正常编译运行
 
 
 # 最后
 
-如果喜欢原生干净的代码，也给大家提供个Google AOSP版的Launcher3地址：
+如果喜欢原生干净的代码，也给大家提供个Google AOSP版的Launcher3地址：  
 ```
 git clone https://android.googlesource.com/platform/packages/apps/Launcher3
 ```
