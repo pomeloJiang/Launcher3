@@ -48,7 +48,13 @@ repositories {
 }
 ```
 
-# 运行
+# 编译运行
+由于Android Studio不能卸载已存在的Launcher3,所以不能直接运行,需要我们进入adb shell手动删除以下文件：
+1、rm -r system/priv-app/Launcher3/Launcher3.apk
+2、rm -r data/data/com.android.launcher3
+3、退出shell,清除Launcher3的数据 adb shell pm clear com.android.launcher3
+4、重启设备 adb reboot
+5、运行
 运行的时候会提示你找不到Default Activity，点击Edit Configuration -> Launch Options ，在Launch选项这里 将Default Activity改为 Specified Activity，然后将Activity选为 com.android.launcher3.Launcher 便可以正常编译运行
 
 
