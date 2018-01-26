@@ -48,6 +48,9 @@ repositories {
 }
 ```
 
+# 运行
+运行的时候会提示你找不到Default Activity，点击Edit Configuration -> Launch Options ，在Launch选项这里 将Default Activity改为 Specified Activity，然后将Activity选为 com.android.launcher3.Launcher 便可以正常编译运行
+
 
 # 最后
 
